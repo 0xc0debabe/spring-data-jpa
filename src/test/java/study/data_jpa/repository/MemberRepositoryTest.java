@@ -187,4 +187,9 @@ class MemberRepositoryTest {
         System.out.println(findMember2.getUsername());
     }
 
+    @Test
+    void callCustom() {
+        List<Member> result = memberRepository.findMemberCustom();
+    }
+
 }
